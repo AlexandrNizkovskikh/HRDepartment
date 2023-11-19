@@ -1,0 +1,37 @@
+﻿<Page x:Class="WpfApp1.PageUvolnenie"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="650" d:DesignWidth="1000"
+      Title="PageUvolnenie">
+
+    <Grid Background="#FF14CA17">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="41*"/>
+        </Grid.RowDefinitions>
+        <DataGrid Name="Uvol" Grid.Row="1" AutoGenerateColumns="False" FontFamily="Bahnschrift">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ФИО" Width="*" Binding="{Binding Path=Sotrud.FIO}"/>
+                <DataGridTextColumn Header="Дата увольнения" Width="*"  Binding="{Binding Path=DataEnd}"/>
+                <DataGridTextColumn Header="Причина увольнения" Width="*" Binding="{Binding Path=Prich}"/>
+                <DataGridTextColumn Header="Выплата" Width="*" Binding="{Binding Path=Viplota}"/>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Margin="5" Content="Удалить" Name="delete" Click="delete_Click"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+            </DataGrid.Columns>
+
+
+        </DataGrid>
+
+        <Button Height="30" Width="140" Content="Добавить" FontSize="17" HorizontalAlignment="Right" Margin="10,0,20,5" Click="Button_Click" Background="#FF1A1A1A" FontFamily="Bahnschrift"/>
+    </Grid>
+</Page>

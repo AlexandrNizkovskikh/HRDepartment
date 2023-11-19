@@ -1,0 +1,40 @@
+﻿<Page x:Class="WpfApp1.PageDolg"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="650" d:DesignWidth="1000"
+      Title="PageDolg">
+
+    <Grid Background="#FF14CA17">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="41*"/>
+        </Grid.RowDefinitions>
+        <DataGrid Name="Dolj" Grid.Row="1" FontFamily="Bahnschrift" AutoGenerateColumns="False" d:ItemsSource="{d:SampleData ItemCount=5}" CanUserDeleteRows="False" CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Должность" Width="*" Binding="{Binding Path=Title}"/>
+                <DataGridTextColumn Header="Оплата(руб/час)" Width="*"  Binding="{Binding Path=Oplata}"/>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Margin="5" Content="Удалить" Name="delete" Click="delete_Click"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Margin="5" Content="Ред." Name="red" Click="red_Click"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+
+
+        </DataGrid>
+        <Button Height="30" FontFamily="Bahnschrift" Width="140" Content="Добавить" FontSize="17" HorizontalAlignment="Right" Margin="10,0,20,5" Click="Button_Click"/>
+    </Grid>
+</Page>

@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище Otdel_KadrovModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Bolnich">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDSotrud" Type="int" />
+    <Property Name="DataStart" Type="date" />
+    <Property Name="DataEnd" Type="date" />
+    <Property Name="Oplata" Type="int" />
+    <Property Name="Prich" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Dolg">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" />
+    <Property Name="Oplata" Type="int" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6013: Первичный ключ в таблице или представлении "Otdel_Kadrov.dbo.Grafick" не определен, его не удалось вывести. Эта таблица или представление исключены. Чтобы использовать сущность, необходимо проверить схему, добавить правильные ключи и раскомментировать ее.
+        <EntityType Name="Grafick">
+          <Property Name="IDSotrud" Type="int" />
+          <Property Name="TimeWork" Type="time" Precision="7" />
+        </EntityType>-->
+  <EntityType Name="Komandirovka">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDSotrud" Type="int" />
+    <Property Name="DataStart" Type="date" />
+    <Property Name="DataEnd" Type="date" />
+    <Property Name="Chele" Type="nvarchar(max)" />
+    <Property Name="Viplota" Type="int" />
+  </EntityType>
+  <EntityType Name="Kondidat">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FIO" Type="nvarchar(max)" />
+    <Property Name="Birthday" Type="date" />
+    <Property Name="Pasport" Type="nvarchar(max)" />
+    <Property Name="INN" Type="nvarchar(max)" />
+    <Property Name="Obrazov" Type="nvarchar(max)" />
+    <Property Name="Dolg" Type="int" />
+  </EntityType>
+  <EntityType Name="Sotrud">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FIO" Type="nvarchar(max)" />
+    <Property Name="Birthday" Type="date" />
+    <Property Name="Pasport" Type="nvarchar(max)" />
+    <Property Name="INN" Type="nvarchar(max)" />
+    <Property Name="Obrazov" Type="nvarchar(max)" />
+    <Property Name="Dolg" Type="int" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Uvolnenie">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDSotrud" Type="int" />
+    <Property Name="DataEnd" Type="date" />
+    <Property Name="Prich" Type="nvarchar(max)" />
+    <Property Name="Viplota" Type="int" />
+  </EntityType>
+  <Association Name="FK_Bolnich_Sotrud">
+    <End Role="Sotrud" Type="Self.Sotrud" Multiplicity="0..1" />
+    <End Role="Bolnich" Type="Self.Bolnich" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sotrud">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Bolnich">
+        <PropertyRef Name="IDSotrud" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <!--Ошибки, обнаруженные при создании:
+ошибка 6004: Невозможно найти таблицу "Otdel_Kadrov.dbo.Grafick", на которую ссылается связь.
+        <Association Name="FK_Grafick_Sotrud" />-->
+  <Association Name="FK_Komandirovka_Sotrud">
+    <End Role="Sotrud" Type="Self.Sotrud" Multiplicity="0..1" />
+    <End Role="Komandirovka" Type="Self.Komandirovka" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sotrud">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Komandirovka">
+        <PropertyRef Name="IDSotrud" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kondidat_Dolg">
+    <End Role="Dolg" Type="Self.Dolg" Multiplicity="0..1" />
+    <End Role="Kondidat" Type="Self.Kondidat" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dolg">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Kondidat">
+        <PropertyRef Name="Dolg" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sotrud_Dolg">
+    <End Role="Dolg" Type="Self.Dolg" Multiplicity="0..1" />
+    <End Role="Sotrud" Type="Self.Sotrud" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dolg">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Sotrud">
+        <PropertyRef Name="Dolg" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Uvolnenie_Sotrud">
+    <End Role="Sotrud" Type="Self.Sotrud" Multiplicity="0..1" />
+    <End Role="Uvolnenie" Type="Self.Uvolnenie" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sotrud">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Uvolnenie">
+        <PropertyRef Name="IDSotrud" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище Otdel_KadrovModelContainer">
+    <EntitySet Name="Bolnich" EntityType="Self.Bolnich" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dolg" EntityType="Self.Dolg" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Komandirovka" EntityType="Self.Komandirovka" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Kondidat" EntityType="Self.Kondidat" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sotrud" EntityType="Self.Sotrud" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Uvolnenie" EntityType="Self.Uvolnenie" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Bolnich_Sotrud" Association="Self.FK_Bolnich_Sotrud">
+      <End Role="Sotrud" EntitySet="Sotrud" />
+      <End Role="Bolnich" EntitySet="Bolnich" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Komandirovka_Sotrud" Association="Self.FK_Komandirovka_Sotrud">
+      <End Role="Sotrud" EntitySet="Sotrud" />
+      <End Role="Komandirovka" EntitySet="Komandirovka" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kondidat_Dolg" Association="Self.FK_Kondidat_Dolg">
+      <End Role="Dolg" EntitySet="Dolg" />
+      <End Role="Kondidat" EntitySet="Kondidat" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sotrud_Dolg" Association="Self.FK_Sotrud_Dolg">
+      <End Role="Dolg" EntitySet="Dolg" />
+      <End Role="Sotrud" EntitySet="Sotrud" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Uvolnenie_Sotrud" Association="Self.FK_Uvolnenie_Sotrud">
+      <End Role="Sotrud" EntitySet="Sotrud" />
+      <End Role="Uvolnenie" EntitySet="Uvolnenie" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

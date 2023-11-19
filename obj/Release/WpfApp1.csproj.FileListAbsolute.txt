@@ -1,0 +1,155 @@
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\bin\Release\WpfApp1.exe.config
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\bin\Release\WpfApp1.exe
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\bin\Release\WpfApp1.pdb
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\bin\Release\EntityFramework.dll
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\bin\Release\EntityFramework.xml
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\bin\Release\ru\EntityFramework.resources.dll
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\WpfApp1.csproj.AssemblyReference.cache
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\WpfApp1.csproj.SuggestedBindingRedirects.cache
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\AddBolnich.g.cs
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\AddDolg.g.cs
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\AddKomandir.g.cs
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\AddKondidat.g.cs
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\AddSotrud.g.cs
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\AddUvolnenie.g.cs
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\AuthWindow.g.cs
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\MainWindow.g.cs
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\PageBolnich.g.cs
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\PageDolg.g.cs
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\PageKomandir.g.cs
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\PageKondidat.g.cs
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\PageSotrud.g.cs
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\PageUvolnenie.g.cs
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\Spisok.g.cs
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\App.g.cs
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\WpfApp1_Content.g.cs
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\WpfApp1_MarkupCompile.cache
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\WpfApp1_MarkupCompile.lref
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\App.baml
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\AddBolnich.baml
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\AddDolg.baml
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\AddKomandir.baml
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\AddKondidat.baml
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\AddSotrud.baml
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\AddUvolnenie.baml
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\AuthWindow.baml
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\MainWindow.baml
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\PageBolnich.baml
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\PageDolg.baml
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\PageKomandir.baml
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\PageKondidat.baml
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\PageSotrud.baml
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\PageUvolnenie.baml
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\Spisok.baml
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\WpfApp1.g.resources
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\WpfApp1.Properties.Resources.resources
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\WpfApp1.csproj.GenerateResource.cache
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\WpfApp1.csproj.CopyComplete
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\WpfApp1.exe
+C:\Users\galah\OneDrive\Рабочий стол\Курсовая Саня\Прога\obj\Release\WpfApp1.pdb
+C:\Users\user\Desktop\Отдел Кадров\Прога\bin\Release\WpfApp1.exe.config
+C:\Users\user\Desktop\Отдел Кадров\Прога\bin\Release\WpfApp1.exe
+C:\Users\user\Desktop\Отдел Кадров\Прога\bin\Release\WpfApp1.pdb
+C:\Users\user\Desktop\Отдел Кадров\Прога\bin\Release\EntityFramework.dll
+C:\Users\user\Desktop\Отдел Кадров\Прога\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\Отдел Кадров\Прога\bin\Release\EntityFramework.xml
+C:\Users\user\Desktop\Отдел Кадров\Прога\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\Отдел Кадров\Прога\bin\Release\ru\EntityFramework.resources.dll
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\WpfApp1.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\WpfApp1.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\AddBolnich.g.cs
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\AddDolg.g.cs
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\AddKomandir.g.cs
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\AddKondidat.g.cs
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\AddSotrud.g.cs
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\AddUvolnenie.g.cs
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\AuthWindow.g.cs
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\MainWindow.g.cs
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\PageBolnich.g.cs
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\PageDolg.g.cs
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\PageKomandir.g.cs
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\PageKondidat.g.cs
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\PageSotrud.g.cs
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\PageUvolnenie.g.cs
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\Spisok.g.cs
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\App.g.cs
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\WpfApp1_Content.g.cs
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\WpfApp1_MarkupCompile.cache
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\WpfApp1_MarkupCompile.lref
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\App.baml
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\AddBolnich.baml
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\AddDolg.baml
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\AddKomandir.baml
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\AddKondidat.baml
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\AddSotrud.baml
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\AddUvolnenie.baml
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\AuthWindow.baml
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\MainWindow.baml
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\PageBolnich.baml
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\PageDolg.baml
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\PageKomandir.baml
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\PageKondidat.baml
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\PageSotrud.baml
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\PageUvolnenie.baml
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\Spisok.baml
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\WpfApp1.g.resources
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\WpfApp1.Properties.Resources.resources
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\WpfApp1.csproj.GenerateResource.cache
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\WpfApp1.csproj.CopyComplete
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\WpfApp1.exe
+C:\Users\user\Desktop\Отдел Кадров\Прога\obj\Release\WpfApp1.pdb
+D:\VisualStudioProjects\Прога\bin\Release\WpfApp1.exe.config
+D:\VisualStudioProjects\Прога\bin\Release\WpfApp1.exe
+D:\VisualStudioProjects\Прога\bin\Release\WpfApp1.pdb
+D:\VisualStudioProjects\Прога\bin\Release\EntityFramework.dll
+D:\VisualStudioProjects\Прога\bin\Release\EntityFramework.SqlServer.dll
+D:\VisualStudioProjects\Прога\bin\Release\EntityFramework.xml
+D:\VisualStudioProjects\Прога\bin\Release\EntityFramework.SqlServer.xml
+D:\VisualStudioProjects\Прога\bin\Release\ru\EntityFramework.resources.dll
+D:\VisualStudioProjects\Прога\obj\Release\WpfApp1.csproj.AssemblyReference.cache
+D:\VisualStudioProjects\Прога\obj\Release\AddBolnich.g.cs
+D:\VisualStudioProjects\Прога\obj\Release\AddDolg.g.cs
+D:\VisualStudioProjects\Прога\obj\Release\AddKomandir.g.cs
+D:\VisualStudioProjects\Прога\obj\Release\AddKondidat.g.cs
+D:\VisualStudioProjects\Прога\obj\Release\AddSotrud.g.cs
+D:\VisualStudioProjects\Прога\obj\Release\AddUvolnenie.g.cs
+D:\VisualStudioProjects\Прога\obj\Release\AuthWindow.g.cs
+D:\VisualStudioProjects\Прога\obj\Release\MainWindow.g.cs
+D:\VisualStudioProjects\Прога\obj\Release\PageBolnich.g.cs
+D:\VisualStudioProjects\Прога\obj\Release\PageDolg.g.cs
+D:\VisualStudioProjects\Прога\obj\Release\PageKomandir.g.cs
+D:\VisualStudioProjects\Прога\obj\Release\PageKondidat.g.cs
+D:\VisualStudioProjects\Прога\obj\Release\PageSotrud.g.cs
+D:\VisualStudioProjects\Прога\obj\Release\PageUvolnenie.g.cs
+D:\VisualStudioProjects\Прога\obj\Release\Spisok.g.cs
+D:\VisualStudioProjects\Прога\obj\Release\App.g.cs
+D:\VisualStudioProjects\Прога\obj\Release\WpfApp1_Content.g.cs
+D:\VisualStudioProjects\Прога\obj\Release\WpfApp1_MarkupCompile.cache
+D:\VisualStudioProjects\Прога\obj\Release\WpfApp1_MarkupCompile.lref
+D:\VisualStudioProjects\Прога\obj\Release\App.baml
+D:\VisualStudioProjects\Прога\obj\Release\AddBolnich.baml
+D:\VisualStudioProjects\Прога\obj\Release\AddDolg.baml
+D:\VisualStudioProjects\Прога\obj\Release\AddKomandir.baml
+D:\VisualStudioProjects\Прога\obj\Release\AddKondidat.baml
+D:\VisualStudioProjects\Прога\obj\Release\AddSotrud.baml
+D:\VisualStudioProjects\Прога\obj\Release\AddUvolnenie.baml
+D:\VisualStudioProjects\Прога\obj\Release\AuthWindow.baml
+D:\VisualStudioProjects\Прога\obj\Release\MainWindow.baml
+D:\VisualStudioProjects\Прога\obj\Release\PageBolnich.baml
+D:\VisualStudioProjects\Прога\obj\Release\PageDolg.baml
+D:\VisualStudioProjects\Прога\obj\Release\PageKomandir.baml
+D:\VisualStudioProjects\Прога\obj\Release\PageKondidat.baml
+D:\VisualStudioProjects\Прога\obj\Release\PageSotrud.baml
+D:\VisualStudioProjects\Прога\obj\Release\PageUvolnenie.baml
+D:\VisualStudioProjects\Прога\obj\Release\Spisok.baml
+D:\VisualStudioProjects\Прога\obj\Release\WpfApp1.g.resources
+D:\VisualStudioProjects\Прога\obj\Release\WpfApp1.Properties.Resources.resources
+D:\VisualStudioProjects\Прога\obj\Release\WpfApp1.csproj.GenerateResource.cache
+D:\VisualStudioProjects\Прога\obj\Release\WpfApp1.csproj.CoreCompileInputs.cache
+D:\VisualStudioProjects\Прога\obj\Release\WpfApp1.csproj.CopyComplete
+D:\VisualStudioProjects\Прога\obj\Release\WpfApp1.exe
+D:\VisualStudioProjects\Прога\obj\Release\WpfApp1.pdb

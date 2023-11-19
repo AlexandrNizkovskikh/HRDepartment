@@ -1,0 +1,39 @@
+﻿<Page x:Class="WpfApp1.AddBolnich"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddBolnich">
+
+    <Grid Background="#FF1A1A1A">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Добавить Сотрудника:" FontSize="15" VerticalAlignment="Bottom" Margin="10 0" Grid.Row="0" Foreground="White" FontFamily="Bahnschrift"/>
+        <ComboBox Name="CBdolg" FontSize="15" Grid.Row="1" Height="30" VerticalAlignment="Center" Width="780" DisplayMemberPath="FIO" SelectedItem="{Binding Sotrud}" FontFamily="Bahnschrift"/>
+        <TextBlock Text="Добавить Дату начала:" FontSize="15" VerticalAlignment="Bottom" Margin="10 0" Grid.Row="2" Foreground="White" FontFamily="Bahnschrift"/>
+        <DatePicker FontSize="15" Grid.Row="3" Height="30" VerticalAlignment="Center" Width="780" SelectedDate="{Binding DataStart}" FontFamily="Bahnschrift"/>
+        <TextBlock Text="Добавить Дату окончания:" FontSize="15" VerticalAlignment="Bottom" Margin="10 0" Grid.Row="4" Foreground="White" FontFamily="Bahnschrift"/>
+        <DatePicker FontSize="15" Grid.Row="5" Height="30" VerticalAlignment="Center" Width="780" SelectedDate="{Binding DataEnd}" FontFamily="Bahnschrift"/>
+        <TextBlock x:Name="textBlock" Text="Добавить оплату:" FontSize="15" VerticalAlignment="Bottom" Margin="10 0" Grid.Row="6" Foreground="White" FontFamily="Bahnschrift"/>
+        <TextBox FontSize="15" Grid.Row="7" Height="30" VerticalAlignment="Center" Width="780" Text="{Binding Oplata}" FontFamily="Bahnschrift"/>
+        <TextBlock Text="Добавить причину:" FontSize="15" VerticalAlignment="Bottom" Margin="10 0" Grid.Row="8" Foreground="White" FontFamily="Bahnschrift"/>
+        <TextBox FontSize="15" Grid.Row="9" Height="30" VerticalAlignment="Center" Width="780" Text="{Binding Prich}" FontFamily="Bahnschrift"/>
+
+        <Button Content="Сохранить" Grid.Row="10" Height="30" Width="150" FontSize="17" Click="Button_Click" Background="#FF14CA17" Foreground="White" Margin="0,0,150,0" TextBlock.FontFamily="Bahnschrift"/>
+        <Button Content="Назад" Grid.Row="10" Height="30" Width="150" FontSize="17" Click="ButtonBack_Click" Background="#FF14CA17" Foreground="White" Margin="415,35,235,35" TextBlock.FontFamily="Bahnschrift"/>
+    </Grid>
+</Page>

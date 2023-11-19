@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище Otdel_KadrovModelContainer" CdmEntityContainer="Otdel_KadrovEntities1">
+    <EntitySetMapping Name="Bolnich">
+      <EntityTypeMapping TypeName="Otdel_KadrovModel.Bolnich">
+        <MappingFragment StoreEntitySet="Bolnich">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IDSotrud" ColumnName="IDSotrud" />
+          <ScalarProperty Name="DataStart" ColumnName="DataStart" />
+          <ScalarProperty Name="DataEnd" ColumnName="DataEnd" />
+          <ScalarProperty Name="Oplata" ColumnName="Oplata" />
+          <ScalarProperty Name="Prich" ColumnName="Prich" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dolg">
+      <EntityTypeMapping TypeName="Otdel_KadrovModel.Dolg">
+        <MappingFragment StoreEntitySet="Dolg">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Oplata" ColumnName="Oplata" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Komandirovka">
+      <EntityTypeMapping TypeName="Otdel_KadrovModel.Komandirovka">
+        <MappingFragment StoreEntitySet="Komandirovka">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IDSotrud" ColumnName="IDSotrud" />
+          <ScalarProperty Name="DataStart" ColumnName="DataStart" />
+          <ScalarProperty Name="DataEnd" ColumnName="DataEnd" />
+          <ScalarProperty Name="Chele" ColumnName="Chele" />
+          <ScalarProperty Name="Viplota" ColumnName="Viplota" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kondidat">
+      <EntityTypeMapping TypeName="Otdel_KadrovModel.Kondidat">
+        <MappingFragment StoreEntitySet="Kondidat">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FIO" ColumnName="FIO" />
+          <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+          <ScalarProperty Name="Pasport" ColumnName="Pasport" />
+          <ScalarProperty Name="INN" ColumnName="INN" />
+          <ScalarProperty Name="Obrazov" ColumnName="Obrazov" />
+          <ScalarProperty Name="Dolg" ColumnName="Dolg" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sotrud">
+      <EntityTypeMapping TypeName="Otdel_KadrovModel.Sotrud">
+        <MappingFragment StoreEntitySet="Sotrud">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FIO" ColumnName="FIO" />
+          <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+          <ScalarProperty Name="Pasport" ColumnName="Pasport" />
+          <ScalarProperty Name="INN" ColumnName="INN" />
+          <ScalarProperty Name="Obrazov" ColumnName="Obrazov" />
+          <ScalarProperty Name="Dolg" ColumnName="Dolg" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="Otdel_KadrovModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Uvolnenie">
+      <EntityTypeMapping TypeName="Otdel_KadrovModel.Uvolnenie">
+        <MappingFragment StoreEntitySet="Uvolnenie">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IDSotrud" ColumnName="IDSotrud" />
+          <ScalarProperty Name="DataEnd" ColumnName="DataEnd" />
+          <ScalarProperty Name="Prich" ColumnName="Prich" />
+          <ScalarProperty Name="Viplota" ColumnName="Viplota" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

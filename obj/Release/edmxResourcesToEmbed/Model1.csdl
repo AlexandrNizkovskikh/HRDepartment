@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Otdel_Kadrov1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Bolnich">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDSotrud" Type="Int32" />
+    <Property Name="DataStart" Type="DateTime" Precision="0" />
+    <Property Name="DataEnd" Type="DateTime" Precision="0" />
+    <Property Name="Oplata" Type="Int32" />
+    <Property Name="Prich" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Sotrud" Relationship="Self.FK_Bolnich_Sotrud" FromRole="Bolnich" ToRole="Sotrud" />
+  </EntityType>
+  <EntityType Name="Dolg">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Oplata" Type="Int32" />
+    <NavigationProperty Name="Kondidat" Relationship="Self.FK_Kondidat_Dolg" FromRole="Dolg" ToRole="Kondidat" />
+    <NavigationProperty Name="Sotrud" Relationship="Self.FK_Sotrud_Dolg" FromRole="Dolg" ToRole="Sotrud" />
+  </EntityType>
+  <EntityType Name="Komandirovka">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDSotrud" Type="Int32" />
+    <Property Name="DataStart" Type="DateTime" Precision="0" />
+    <Property Name="DataEnd" Type="DateTime" Precision="0" />
+    <Property Name="Chele" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Viplota" Type="Int32" />
+    <NavigationProperty Name="Sotrud" Relationship="Self.FK_Komandirovka_Sotrud" FromRole="Komandirovka" ToRole="Sotrud" />
+  </EntityType>
+  <EntityType Name="Kondidat">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FIO" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Birthday" Type="DateTime" Precision="0" />
+    <Property Name="Pasport" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="INN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Obrazov" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Dolg" Type="Int32" />
+    <NavigationProperty Name="Dolg1" Relationship="Self.FK_Kondidat_Dolg" FromRole="Kondidat" ToRole="Dolg" />
+  </EntityType>
+  <EntityType Name="Sotrud">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FIO" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Birthday" Type="DateTime" Precision="0" />
+    <Property Name="Pasport" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="INN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Obrazov" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Dolg" Type="Int32" />
+    <NavigationProperty Name="Bolnich" Relationship="Self.FK_Bolnich_Sotrud" FromRole="Sotrud" ToRole="Bolnich" />
+    <NavigationProperty Name="Dolg1" Relationship="Self.FK_Sotrud_Dolg" FromRole="Sotrud" ToRole="Dolg" />
+    <NavigationProperty Name="Komandirovka" Relationship="Self.FK_Komandirovka_Sotrud" FromRole="Sotrud" ToRole="Komandirovka" />
+    <NavigationProperty Name="Uvolnenie" Relationship="Self.FK_Uvolnenie_Sotrud" FromRole="Sotrud" ToRole="Uvolnenie" />
+  </EntityType>
+  <EntityType Name="Uvolnenie">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDSotrud" Type="Int32" />
+    <Property Name="DataEnd" Type="DateTime" Precision="0" />
+    <Property Name="Prich" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Viplota" Type="Int32" />
+    <NavigationProperty Name="Sotrud" Relationship="Self.FK_Uvolnenie_Sotrud" FromRole="Uvolnenie" ToRole="Sotrud" />
+  </EntityType>
+  <Association Name="FK_Bolnich_Sotrud">
+    <End Role="Sotrud" Type="Self.Sotrud" Multiplicity="0..1" />
+    <End Role="Bolnich" Type="Self.Bolnich" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sotrud">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Bolnich">
+        <PropertyRef Name="IDSotrud" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kondidat_Dolg">
+    <End Role="Dolg" Type="Self.Dolg" Multiplicity="0..1" />
+    <End Role="Kondidat" Type="Self.Kondidat" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dolg">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Kondidat">
+        <PropertyRef Name="Dolg" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sotrud_Dolg">
+    <End Role="Dolg" Type="Self.Dolg" Multiplicity="0..1" />
+    <End Role="Sotrud" Type="Self.Sotrud" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dolg">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Sotrud">
+        <PropertyRef Name="Dolg" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Komandirovka_Sotrud">
+    <End Role="Sotrud" Type="Self.Sotrud" Multiplicity="0..1" />
+    <End Role="Komandirovka" Type="Self.Komandirovka" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sotrud">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Komandirovka">
+        <PropertyRef Name="IDSotrud" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Uvolnenie_Sotrud">
+    <End Role="Sotrud" Type="Self.Sotrud" Multiplicity="0..1" />
+    <End Role="Uvolnenie" Type="Self.Uvolnenie" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sotrud">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Uvolnenie">
+        <PropertyRef Name="IDSotrud" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Otdel_KadrovEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Bolnich" EntityType="Self.Bolnich" />
+    <EntitySet Name="Dolg" EntityType="Self.Dolg" />
+    <EntitySet Name="Komandirovka" EntityType="Self.Komandirovka" />
+    <EntitySet Name="Kondidat" EntityType="Self.Kondidat" />
+    <EntitySet Name="Sotrud" EntityType="Self.Sotrud" />
+    <EntitySet Name="Uvolnenie" EntityType="Self.Uvolnenie" />
+    <AssociationSet Name="FK_Bolnich_Sotrud" Association="Self.FK_Bolnich_Sotrud">
+      <End Role="Sotrud" EntitySet="Sotrud" />
+      <End Role="Bolnich" EntitySet="Bolnich" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kondidat_Dolg" Association="Self.FK_Kondidat_Dolg">
+      <End Role="Dolg" EntitySet="Dolg" />
+      <End Role="Kondidat" EntitySet="Kondidat" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sotrud_Dolg" Association="Self.FK_Sotrud_Dolg">
+      <End Role="Dolg" EntitySet="Dolg" />
+      <End Role="Sotrud" EntitySet="Sotrud" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Komandirovka_Sotrud" Association="Self.FK_Komandirovka_Sotrud">
+      <End Role="Sotrud" EntitySet="Sotrud" />
+      <End Role="Komandirovka" EntitySet="Komandirovka" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Uvolnenie_Sotrud" Association="Self.FK_Uvolnenie_Sotrud">
+      <End Role="Sotrud" EntitySet="Sotrud" />
+      <End Role="Uvolnenie" EntitySet="Uvolnenie" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

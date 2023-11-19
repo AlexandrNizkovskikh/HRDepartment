@@ -1,0 +1,46 @@
+﻿<Page x:Class="WpfApp1.PageSotrud"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="650" d:DesignWidth="1000"
+      Title="PageSotrud">
+
+    <Grid Background="#FF1EC821">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="41*"/>
+        </Grid.RowDefinitions>
+        <DataGrid Name="Sotr" Grid.Row="1" AutoGenerateColumns="False" FontFamily="Bahnschrift" Background="#FF1A1A1A" d:ItemsSource="{d:SampleData ItemCount=5}" CanUserDeleteRows="False" CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ФИО" Width="*" Binding="{Binding Path=FIO}"/>
+                <DataGridTextColumn Header="День рождение" Width="*"  Binding="{Binding Path=Birthday}"/>
+                <DataGridTextColumn Header="Паспорт" Width="*" Binding="{Binding Path=Pasport}"/>
+                <DataGridTextColumn Header="ИНН" Width="*" Binding="{Binding Path=INN}"/>
+                <DataGridTextColumn Header="Образование" Width="*" Binding="{Binding Path=Obrazov}"/>
+                <DataGridTextColumn Header="Должность" Width="*" Binding="{Binding Path=Dolg1.Title}"/>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Margin="5" Content="Удалить" Name="delete" Click="delete_Click"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Margin="5" Content="Ред." Name="red" Click="red_Click"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+
+
+        </DataGrid>
+        <TextBox Name="search" Margin="5,12,0,17" Width="395" HorizontalAlignment="Left" FontFamily="Bahnschrift Condensed" FontSize="21"/>
+        <Button Margin="407,11,493,17" Width="100" Content="Поиск" Click="Button_Click_1" FontFamily="Bahnschrift" FontSize="17"/>
+        <Button Width="140" Content="Добавить" FontSize="17" HorizontalAlignment="Right" Margin="0,8,20,18" Click="Button_Click" Background="#FF1A1A1A" Foreground="White" FontFamily="Bahnschrift"/>
+    </Grid>
+</Page>

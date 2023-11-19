@@ -1,0 +1,102 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Отдел кадров" Height="650" Width="1200" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <ControlTemplate x:Key="TopMenuButtons" TargetType="Button">
+            <Grid Name="Btn" Height="60" Width="200" VerticalAlignment="Center" HorizontalAlignment="Left">
+                <Border Margin="0,0,21,0">
+                    <Grid Margin="0,0,-21,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Label Content="{TemplateBinding Content}"
+                               FontFamily="Bahnschrift Condensed"
+                               VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Margin="0,0,0,5">
+                            <Label.Style>
+                                <Style TargetType="Label">
+                                    <Setter Property="Foreground" Value="#FFD3D7DA"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Path=IsMouseOver, ElementName=Btn}"
+                                         Value="True">
+                                            <Setter Property="Foreground" Value="White"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Label.Style>
+                        </Label>
+                    </Grid>
+                </Border>
+                <Border Name="MouseOverBorder" Background="#FF00FF33">
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="Opacity" Value="0"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding Path=IsMouseOver, ElementName=Btn}"
+                                             Value="True">
+                                    <Setter Property="Opacity" Value="0.1"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                </Border>
+                <Border Name="IsSelectedBorder" Background="#FF5AF77A">
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="Opacity" Value="0"/>
+                            <Setter Property="BorderThickness" Value="3,0,0,0"/>
+                            <Setter Property="Visibility" Value="Hidden"/>
+                            <Setter Property="BorderBrush" Value="#FF588DF7"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding RelativeSource={RelativeSource
+                                    Mode=FindAncestor,
+                                    AncestorType={x:Type Button}},
+                                    Path = IsFocused}" Value="True">
+                                    <Setter Property="Visibility" Value="Visible"/>
+                                    <Setter Property="Opacity" Value="0.5"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                </Border>
+            </Grid>
+        </ControlTemplate>
+    </Window.Resources>
+
+    <Grid>
+        <Grid Grid.Column="1" Background="#FF312E2E">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="105"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="195"/>
+                <ColumnDefinition Width="1005"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0" Grid.RowSpan="8" Background="#FF1A1A1A" Margin="0,0,1000,0" Grid.ColumnSpan="2">
+
+            </Grid>
+
+            <Image Source="Resources/Лого.png" Margin="31,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+            <Frame Name="MainFrame" Grid.RowSpan="8" NavigationUIVisibility="Hidden" Margin="5,0,0,0" Grid.Column="1"/>
+
+            <Button Name="Sotrud" Grid.Row="1" Template="{StaticResource ResourceKey=TopMenuButtons}" Content="Сотрудники" Click="Sotrud_Click"  Background="#FF1EC821" Foreground="White" FontSize="25" FontFamily="Bahnschrift" Margin="0,0,1000,75" Grid.RowSpan="2" Grid.ColumnSpan="2" />
+            <Button Name="Dolg" Grid.Row="2" Template="{StaticResource ResourceKey=TopMenuButtons}" Content="Должность" Click="Dolg_Click" Background="#FF1EC821" Foreground="White" FontSize="25" FontFamily="Bahnschrift" Margin="0,0,1000,0" Grid.ColumnSpan="2" />
+            <Button Name="Bolnich" Grid.Row="2" Template="{StaticResource ResourceKey=TopMenuButtons}"  Content="Больничный" Click="Bolnich_Click" Background="#FF1EC821" Foreground="White" FontSize="25" FontFamily="Bahnschrift" Margin="0,75,1000,75" Grid.RowSpan="3" Grid.ColumnSpan="2" />
+            <Button Name="Uvolnenie" Grid.Row="4" Template="{StaticResource ResourceKey=TopMenuButtons}" Content="Уволнение" Click="Uvolnenie_Click" Background="#FF1EC821" Foreground="White" FontSize="25" FontFamily="Bahnschrift" Margin="0,0,1000,0" Grid.ColumnSpan="2" />
+            <Button Name="Komandir" Grid.Row="4" Template="{StaticResource ResourceKey=TopMenuButtons}"  Content="Командировка" Click="Komandir_Click" Background="#FF14CA17" Foreground="White" FontSize="25" FontFamily="Bahnschrift" Margin="0,75,1000,75" Grid.RowSpan="3" Grid.ColumnSpan="2" />
+            <Button Name="Kondidat" Grid.Row="6" Template="{StaticResource ResourceKey=TopMenuButtons}" Content="Кандидаты" Click="Kondidat_Click" Background="#FF1EC821" Foreground="White" FontSize="25" FontFamily="Bahnschrift" Margin="0,0,1000,0" Grid.ColumnSpan="2" />
+        </Grid>
+    </Grid>
+</Window>

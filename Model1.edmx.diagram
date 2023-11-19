@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="64a2a751bbe2456c8e1ced95f6d8176c" Name="Diagram1">
+        <EntityTypeShape EntityType="Otdel_Kadrov1Model.Bolnich" Width="1.5" PointX="5.25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Otdel_Kadrov1Model.Dolg" Width="1.5" PointX="0.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Otdel_Kadrov1Model.Komandirovka" Width="1.5" PointX="5.25" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Otdel_Kadrov1Model.Kondidat" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Otdel_Kadrov1Model.Sotrud" Width="1.5" PointX="3" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Otdel_Kadrov1Model.Uvolnenie" Width="1.5" PointX="5.25" PointY="11" IsExpanded="true" />
+        <AssociationConnector Association="Otdel_Kadrov1Model.FK_Bolnich_Sotrud" ManuallyRouted="false" />
+        <AssociationConnector Association="Otdel_Kadrov1Model.FK_Kondidat_Dolg" ManuallyRouted="false" />
+        <AssociationConnector Association="Otdel_Kadrov1Model.FK_Sotrud_Dolg" ManuallyRouted="false" />
+        <AssociationConnector Association="Otdel_Kadrov1Model.FK_Komandirovka_Sotrud" ManuallyRouted="false" />
+        <AssociationConnector Association="Otdel_Kadrov1Model.FK_Uvolnenie_Sotrud" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
